@@ -300,13 +300,13 @@ a {
 .nav,
 .nav-list,
 .contacts,
-.header .container {
+.page-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
