@@ -1,8 +1,12 @@
 @import '../sass/utils/variables';
 @import '../sass/utils/comon';
+@import '../sass/components/logo';
+@import '../sass/components/networks';
 @import '../sass/components/header/page-header';
 @import '../sass/components/header/nav';
-@import '../sass/components/logo';
 @import '../sass/components/header/contacts';
 @import '../sass/components/main/hero-section';
-@import '../sass/components/main/features-sectrion';
+@import '../sass/components/main/features-section';
+@import '../sass/components/main/we-do-section';
+@import '../sass/components/main/team-section';
+@import '../sass/components/main/_clients.scss';

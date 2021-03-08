@@ -1,0 +1,33 @@
+.network__list {
+  @extend %list;
+
+  display: flex;
+  justify-content: space-between;
+
+  text-align: center;
+  margin-top: 16px;
+}
+
+.network__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  width: 44px;
+  height: 44px;
+
+  color: #afb1b8;
+  transition: color 250ms $bazier, background-color 250ms $bazier;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+    outline: none;
+  }
+}
+
+.network__icon {
+  fill: currentColor;
+}
