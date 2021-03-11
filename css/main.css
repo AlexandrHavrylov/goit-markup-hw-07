@@ -894,20 +894,24 @@ a {
   left: 0px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid black;
+  border-radius: 2px;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox__icon--check {
+.checkbox__icon--check use {
   opacity: 0;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox__input:checked ~ .checkbox__icon--check {
+.checkbox__input:checked ~ .checkbox__icon--check use {
   opacity: 1;
 }
 
-.checkbox__input:checked ~ .checkbox__icon--uncheck {
-  opacity: 0;
+.checkbox__input:checked ~ .checkbox__icon--check {
+  border: none;
 }
 
 .examples {
